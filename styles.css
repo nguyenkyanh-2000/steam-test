@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+.main-body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: darkslateblue;
+}
+.header {
+  margin: auto;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #171d25;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+  font-size: large;
+  font-weight: 500;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+}
+header ul li a:hover {
+  color: #c6d4df;
+}
+header ul li a.active {
+  color: #1a9fff;
+  text-decoration: underline;
+}
+
+.middle-navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  width: 70%;
+  padding: 16px;
+  height: 30px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  height: 100%;
+}
+
+.navigation-links li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+.search-area {
+  display: flex;
+  align-content: center;
+}
+
+#search-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+#search-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.genres-area {
+  max-size: 210px;
+}
+.genres-header {
+  margin-top: 20px;
+  color: #536f86;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.genres-area ul {
+  color: #66c0f4;
+  cursor: pointer;
+}
+.genres-group {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px 30px;
+  }
+  header ul li {
+    font-size: medium;
+  }
+  .middle-navigator {
+    width: 90%;
+  }
+  .main {
+    flex-wrap: wrap;
+  }
+  .genres-area {
+    display: none;
+  }
+}
